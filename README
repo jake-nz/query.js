@@ -1,0 +1,25 @@
+> test = new query("this=that&fish=awesome");
+> test.toString()
+"this=that&fish=awesome"
+
+> test.remove("this");
+> test.toString()
+"fish=awesome"
+
+> test.set("set", true);
+> test.toString()
+"fish=awesome&set=true"
+
+> test.pop("set")
+true
+> test.toString()
+"fish=awesome"
+
+> test.get("fish")
+"awesome"
+
+> test.get("naa")
+undefined
+
+> test.get("naa", 'default')
+"default"
