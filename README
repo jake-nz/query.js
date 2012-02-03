@@ -1,3 +1,5 @@
+Requires jQuery.
+
 > test = new query("this=that&fish=awesome");
 > test.toString()
 "this=that&fish=awesome"
